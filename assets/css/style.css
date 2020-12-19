@@ -34,7 +34,7 @@ header h1 {
 }
 
 header a {
-    color: var(--primary-color);
+    color: rgb(64, 64, 64);
     text-decoration: none;
 }
 
@@ -100,4 +100,82 @@ header nav ul li a {
     padding-left: 250px;
     padding-top: 50px;
     padding-right: 100px;
+}
+
+.work {
+    display: inline-flex;
+}
+
+.work-grid-container {
+    display: grid;
+    grid-gap: 20px;
+    padding-left: 270px; 
+}
+
+.work-grid-item {
+    border: solid;
+    color: rgb(64, 64, 64);
+}
+
+.work-grid-item.main {
+    width: 975px;
+    height: 550px;
+    background-image: url("../images/run-buddy-v2.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.work-grid-item.secondary {
+    width: 487px;
+    height: 275px; 
+}
+
+.work-grid-item.horiseon {
+    background-image: url("../images/horiseon-screenshot.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.work-grid-item.future {
+    background-image: url("../images/future-screenshot.jpg");
+    background-size: cover;
+    background-position: center; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.work-grid-container a {
+    font-size: 50px; 
+    text-align: center;
+    background-color: #8abece;
+    /*padding-bottom: 100px; this is only padding the background color instead of the text*/
+}
+
+.info {
+    display: inline-flex;
+}
+
+.info p {
+    font-size: 30px; 
+    justify-content: space-between;
+    padding-left: 100px; 
+    padding-right: 20px; 
+    padding-bottom: 200px; 
+    padding-top: 90px; 
+    
+}
+
+.info a {
+    color: black;
 }
