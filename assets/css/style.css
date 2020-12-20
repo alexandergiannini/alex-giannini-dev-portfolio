@@ -66,6 +66,8 @@ header nav ul li a {
     height: 375px;
     width: 100%;
     position: relative;
+    /*added the below line*/
+    align-items: flex-start;
 }
 
 .hero-text {
@@ -87,6 +89,7 @@ header nav ul li a {
     margin: 0 auto;
 }
 
+
 .content-header {
     color: rgb(51, 51, 95);
     text-align: left; 
@@ -103,16 +106,20 @@ header nav ul li a {
     padding-top: 50px;
     padding-right: 100px;
     color: rgb(51, 51, 95);
+    padding-bottom: 100px;
 }
 
 .work {
     display: inline-flex;
+    padding-bottom: 100px;
 }
 
 .work-grid-container {
     display: grid;
     grid-gap: 20px;
     padding-left: 270px;
+    padding-top: 50px;
+    
 }
 
 .work-grid-item {
@@ -140,7 +147,7 @@ header nav ul li a {
 
 .work-grid-item.secondary {
     width: 487px;
-    height: 275px; 
+    height: 250px; 
 }
 
 .work-grid-item.horiseon {
@@ -175,15 +182,126 @@ header nav ul li a {
 
 .info p {
     font-size: 30px; 
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: 100px; 
     padding-right: 20px; 
     padding-bottom: 200px; 
     padding-top: 90px; 
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(51, 51, 95);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .info a {
     color: rgb(51, 51, 95);
 }
+
+@media screen and (max-width: 980px) {
+   
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+
+      .hero {
+          width: 100%
+      }
+
+      .work {
+          padding-bottom: 100px;
+      }
+
+      .content-header{
+          text-align: left;
+          font-size: 40px;
+          padding-left: 20px; 
+      }
+
+      .content p {
+          width: 100%;
+          flex: 100%; 
+          font-size: 20px;
+          padding-left: 50px;
+          padding-top: 50px;
+      }
+
+      .work-grid-container{
+        display: grid;
+        grid-gap: 10px;
+        padding-left: 100px;
+        flex: 100%;
+        width: 100%
+        
+    }
+    
+    .work-grid-container a {
+        font-size: 25px;
+    }
+
+      .work-grid-item {
+          font-size: 200px;
+      }
+
+      .work-grid-item.main {
+          width: 500px;
+          height: 250px;
+      }
+
+      .work-grid-item.work-grid-item.secondary {
+          width: 250px;
+          height: 200px;
+      }
+
+      .info p {
+          text-align: left;
+          font-size: 15px; 
+          padding-left: 50px;
+          padding-bottom: 20px;
+          padding-top: 70px;
+          margin-right: 2px;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+      }
+  }
+
+
+@media screen and (max-width: 768px) {
+
+section {
+        padding: 30px 15px;
+    }
+
+.hero-text {
+        display: flex;
+        font-size: 20px;
+    }
+  }
+
+.content-header {
+    text-align: right;
+    
+}
+
+@media screen and (max-width: 575px) {
+    .hero-text {
+        display: flex;
+        font-size: 15px;
+    }
+  }
