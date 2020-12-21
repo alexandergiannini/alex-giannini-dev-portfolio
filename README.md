@@ -4,4 +4,4 @@
 
 # The URL for the deployed application is: https://alexandergiannini.github.io/alex-giannini-dev-portfolio/
 
-# Screenshot of the project is: portfolio-hero.jpg
+# Screenshot of the project is: <img width="1658" alt="Screen Shot 2020-12-20 at 5 37 21 PM" src="https://user-images.githubusercontent.com/74731953/102732487-b5d23000-42ef-11eb-9bff-ef0f77e7f263.png">
