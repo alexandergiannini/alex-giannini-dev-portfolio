@@ -3,11 +3,11 @@
     padding: 0;
     margin: 0;
 }
-
+/*set the background color here to resemble the mock*/
 body {
     background-color: #f2ebf5;
 }
-
+/*header main CSS is displayed here, including a sticky header!*/
 header {
     padding: 20px 35px;
     background-color: rgb(64, 64, 64);
@@ -24,6 +24,7 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*adjusted the background color to match the mock*/
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -38,6 +39,7 @@ header a {
     text-decoration: none;
 }
 
+/*nav and its contents float to the right*/
 header nav {
     float: right;
 }
@@ -58,7 +60,7 @@ header nav ul li a {
     text-decoration: underline;
 }
 
-
+/*used an image of myself here as the hero image*/
 .hero {
     background-image: url("../images/portfolio-hero.jpg");
     background-size: cover;
@@ -66,7 +68,6 @@ header nav ul li a {
     height: 375px;
     width: 100%;
     position: relative;
-    /*added the below line*/
     align-items: flex-start;
 }
 
@@ -84,11 +85,11 @@ header nav ul li a {
     color: rgb(64, 64, 64);
 }
 
+/*inline flex used to display block level elements inline*/
 .about-me {
     display: inline-flex;
     margin: 0 auto;
 }
-
 
 .content-header {
     color: rgb(51, 51, 95);
@@ -100,7 +101,7 @@ header nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
- .content p {
+.content p {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 250px;
     padding-top: 50px;
@@ -109,11 +110,13 @@ header nav ul li a {
     padding-bottom: 100px;
 }
 
+/*inline flex used to display block level elements inline*/
 .work {
     display: inline-flex;
     padding-bottom: 100px;
 }
 
+/*grid container displayed here*/
 .work-grid-container {
     display: grid;
     grid-gap: 20px;
@@ -132,6 +135,7 @@ header nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*main grid contents displayed here*/
 .work-grid-item.main {
     width: 975px;
     height: 550px;
@@ -145,11 +149,13 @@ header nav ul li a {
 
 }
 
+/*other grid item height and width determined ehre*/
 .work-grid-item.secondary {
     width: 487px;
     height: 250px; 
 }
 
+/*alignment and formatting of the one of the secondary grid items*/
 .work-grid-item.horiseon {
     background-image: url("../images/horiseon-screenshot.jpg");
     background-size: cover;
@@ -160,6 +166,7 @@ header nav ul li a {
     grid-row-end: 4;
 }
 
+/*alignment and formatting of the one of the secondary grid items*/
 .work-grid-item.future {
     background-image: url("../images/future-screenshot.jpg");
     background-size: cover;
@@ -176,6 +183,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/*inline flex displayed here to display block level elements inline*/
 .info {
     display: inline-flex;
 }
@@ -197,25 +205,25 @@ header nav ul li a {
     color: rgb(51, 51, 95);
 }
 
+/*adjusting the media queries with a max width of 980px*/
 @media screen and (max-width: 980px) {
-   
     header {
         padding-bottom: 0;
         justify-content: center;
         position: relative;
       }
-    
+
       header h1 {
         width: 100%;
         text-align: center;
       }
-    
+
       header nav ul {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
       }
-    
+
       header nav ul li a {
         font-size: 20px;
       }
@@ -251,7 +259,7 @@ header nav ul li a {
         
     }
     
-    .work-grid-container a {
+      .work-grid-container a {
         font-size: 25px;
     }
 
@@ -264,7 +272,7 @@ header nav ul li a {
           height: 250px;
       }
 
-      .work-grid-item.work-grid-item.secondary {
+      .work-grid-item.secondary {
           width: 250px;
           height: 200px;
       }
@@ -278,80 +286,119 @@ header nav ul li a {
           margin-right: 2px;
           justify-content: flex-start;
           flex-wrap: wrap;
-          
       }
   }
 
-
+/*adjusting the media queries with a max width of 768px*/
 @media screen and (max-width: 768px) {
-
-section {
+    section {
         padding: 30px 15px;
-    }
+     }
 
-.hero-text {
+    .hero-text {
         display: flex;
         font-size: 20px;
     }
 
-.about-me {
+    .about-me {
         display: block;
-    }
+     }
 
-.content-header {
+    .content-header {
     text-align: center;
     font-size: 100px;
     padding-bottom: 50px;
-} 
+    } 
 
-.content-p {
+    .content-p {
     text-align: center;
     width: 100%;
-}
+    }
 
-.work {
+    .work {
     display: block;
     padding-bottom: 50px;
-}
+    }
 
-.work-grid-container{
+    .work-grid-container{
     display: grid;
     grid-gap: 5px;
     flex: 100%;
     width: 100%;
-}
-
-.work-grid-item {
-    font-size: 50px;
-}
-
-.work-grid-item.main {
-    width: 500px;
-    height: 250px;
-}
-
-.work-grid-item.secondary {
-    width: 250px;
-    height: 200px;
-}
-
-
-.info {
-    display: block;
-    text-align: center;
-}
-
-.info p {
-    padding-left: 170px;
-    font-size: 25px;
-}
-
-}
-
-@media screen and (max-width: 575px) {
-    .hero-text {
-        display: flex;
-        font-size: 15px;
     }
 
+    .work-grid-item {
+    font-size: 50px;
+    }
+
+    .work-grid-item.main {
+    width: 500px;
+    height: 250px;
+    }
+
+    .work-grid-item.secondary {
+    width: 250px;
+    height: 200px;
+    }
+
+
+    .info {
+    display: block;
+    text-align: center;
+    }
+
+    .info p {
+    padding-left: 170px;
+    font-size: 25px;
+    }
+}
+
+/*adjusting the media queries with a max width of 575px*/
+@media screen and (max-width: 575px) {
+
+    section {
+    padding: 20px 15px;
+    }
+
+    .hero {
+    width: 100%
+    }
+
+    .hero-text {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .content-header {
+    font-size: 70px;
+    }
+
+    .content-p {
+    width: auto;
+    text-align: center;
+    }
+
+    .work-grid-item {
+    font-size: 30px;
+    }
+    
+    .work-grid-item.main {
+    width: 200px;
+    height: 250px;
+    }
+    
+    .work-grid-item.secondary {
+    width: 125px;
+    height: 200px;
+    }
+
+    .work-grid-container a {
+    font-size: 20px;
+    }
+
+   .info p {
+        text-align: center;
+        padding-left: 60px;
+        font-size: 20px;
+    }
 }
