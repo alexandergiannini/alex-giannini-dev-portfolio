@@ -167,8 +167,8 @@ header nav ul li a {
 }
 
 /*alignment and formatting of the one of the secondary grid items*/
-.work-grid-item.future {
-    background-image: url("../images/future-screenshot.jpg");
+.work-grid-item.basketblog {
+    background-image: url("../images/basketblog.jpg");
     background-size: cover;
     background-position: center; 
     grid-column-start: 1;
